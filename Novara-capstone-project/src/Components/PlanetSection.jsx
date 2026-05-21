@@ -1,14 +1,20 @@
 import { useEffect, useState } from 'react';
+
 import PlanetCard from './PlanetCard';
+
+import { fetchPlanets } from '../services/api';
 
 function PlanetSection() {
   const [planets, setPlanets] = useState([]);
 
   useEffect(() => {
-    fetch('YOUR_API_LINK')
-      .then((response) => response.json())
-      .then((data) => setPlanets(data))
-      .catch((error) => console.log(error));
+    async function getPlanetData() {
+      const data = await fetchPlanets();
+
+      setPlanets(data);
+    }
+
+    getPlanetData();
   }, []);
 
   return (
