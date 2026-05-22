@@ -1,3 +1,4 @@
+/*
 import { useEffect, useState } from 'react';
 
 import PlanetCard from './PlanetCard';
@@ -35,4 +36,4 @@ function PlanetSection() {
   );
 }
 
-export default PlanetSection;
+export default PlanetSection; */
