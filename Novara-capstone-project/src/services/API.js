@@ -1,6 +1,8 @@
 export async function fetchPlanets() {
   try {
-    const response = await fetch('YOUR_API_LINK');
+    const response = await fetch(
+      'https://anurella.github.io/json/planets.json'
+    );
 
     const data = await response.json();
 

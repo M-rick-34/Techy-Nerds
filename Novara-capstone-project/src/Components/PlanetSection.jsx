@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
+import "./PlanetSection.css";
 
-import PlanetCard from './PlanetCard';
+import { useEffect, useState } from "react";
 
-import { fetchPlanets } from '../services/api';
+import PlanetCard from "./PlanetCard";
+
+import { fetchPlanets } from "../services/api";
 
 function PlanetSection() {
   const [planets, setPlanets] = useState([]);
@@ -19,14 +21,20 @@ function PlanetSection() {
 
   return (
     <section id="planets" className="planet-section">
-      <h2>Planet Data</h2>
+      <h2>Visualizing the Differences Between Planets</h2>
+
+      <p className="planet-subtext">
+        Each planet in our solar system has unique physical characteristics.
+        Visual comparisons help highlight how vastly different terrestrial
+        planets are from gas giants and ice giants.
+      </p>
 
       <div className="planet-container">
-        {planets.map((planet) => (
+        {planets.map((planet, index) => (
           <PlanetCard
-            key={planet.id}
-            name={planet.name}
-            distance={planet.distance}
+            key={index}
+            name={planet.planet}
+            distance={planet.distanceFromSun}
             image={planet.image}
           />
         ))}
