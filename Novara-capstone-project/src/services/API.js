@@ -1,3 +1,4 @@
+/*
 export async function fetchPlanets() {
   try {
     const response = await fetch(
@@ -10,4 +11,4 @@ export async function fetchPlanets() {
   } catch (error) {
     console.log('Error fetching planets:', error);
   }
-}
+}*/
