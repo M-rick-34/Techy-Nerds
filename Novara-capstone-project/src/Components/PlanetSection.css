@@ -57,7 +57,7 @@
 
   text-align: center;
 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .planet-card:hover {
@@ -105,14 +105,12 @@ figcaption span {
 /* RESPONSIVENESS */
 
 @media (max-width: 992px) {
-
   .planet-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-
   .planet-section {
     padding: 4rem 1rem;
   }

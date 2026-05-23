@@ -1,4 +1,4 @@
-import planetLogo from '../assets/Nav Bar Top (1).png';
+import planetLogo from "../assets/Nav Bar Top (1).png";
 
 function Navbar() {
   return (

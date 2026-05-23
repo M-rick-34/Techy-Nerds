@@ -1,4 +1,4 @@
-import './Footer.css';
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
             <p>©2026 Designed by the Techy-Nerds</p>
 
             <p>
-              Built by{' '}
+              Built by{" "}
               <a
                 href="https://github.com/M-rick-34/Techy-Nerds.git"
                 target="_blank"
