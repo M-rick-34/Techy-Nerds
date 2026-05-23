@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-about">
           <h3>About</h3>
-          <p>Josh, Mildred, Lekan, Ifeanyi, Olawale, Adebayo, Daniel, Divine</p>
+          <p>Josh, Mildred, Lekan, Ifeanyi, Olawale, Adedayo, Daniel, Divine</p>
         </div>
 
         <div className="footer-line"></div>
